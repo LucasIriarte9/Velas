@@ -93,7 +93,9 @@ article {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  grid-template-areas: "imagen1 imagen2 imagen3""imagen4 imagen4 imagen3";
+  grid-template-areas: 
+  "imagen1 imagen2 imagen3"
+  "imagen4 imagen4 imagen3";
 }
 
 .imagen1 {
