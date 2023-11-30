@@ -93,7 +93,7 @@ article {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen4 imagen3";
+  grid-template-areas: "imagen1 imagen2 imagen3""imagen4 imagen4 imagen3";
 }
 
 .imagen1 {
@@ -117,19 +117,19 @@ article {
 }
 
 .imagen1 {
-  background-image: url(/images/vela.JPG);
+  background-image: url(../images/vela.JPG);
 }
 
 .imagen2 {
-  background-image: url(/images/perfuminas.jpg);
+  background-image: url(../images/perfuminas.jpg);
 }
 
 .imagen3 {
-  background-image: url(/images/difusor.JPG);
+  background-image: url(../images/difusor.JPG);
 }
 
 .imagen4 {
-  background-image: url(/images/velaabajo.jpg);
+  background-image: url(../images/velaabajo.jpg);
 }
 
 /*--------------------------------footer---------------------------------------*/
