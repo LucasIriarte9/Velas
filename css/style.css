@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ede9dd;
+}
+
+a {
+  font-style: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+li {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+/*--------------------------------------header-------------------------------*/
+header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  margin-right: 5px;
+}
+
+article {
+  margin-left: 40px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+}
+
+.nav li a:hover {
+  color: rgb(195, 144, 99);
+  font-size: 35px;
+  transition: 1.5s;
+}
+
+/*----------------------------responsive nav--------------------------------*/
+@media (max-width: 1024px) {
+  .nav li a {
+    font-size: 20px;
+  }
+
+  .nav li a:hover {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav{
+    max-width: 45vh;
+  }
+  .nav li a {
+    font-size: 15px;
+    margin: 2px;
+  }
+
+  .nav li a:hover {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 80px;
+  }
+}
+
+/*------------------------------main-------------------------------------------*/
+.mainGrid {
+  margin-left: 5%;
+  width: 90vw;
+  height: 78vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen4 imagen3";
+}
+
+.imagen1 {
+  grid-area: imagen1;
+}
+
+.imagen2 {
+  grid-area: imagen2;
+}
+
+.imagen3 {
+  grid-area: imagen3;
+}
+
+.imagen4 {
+  grid-area: imagen4;
+}
+
+.img {
+  background-size: cover;
+}
+
+.imagen1 {
+  background-image: url(/images/vela.JPG);
+}
+
+.imagen2 {
+  background-image: url(/images/perfuminas.jpg);
+}
+
+.imagen3 {
+  background-image: url(/images/difusor.JPG);
+}
+
+.imagen4 {
+  background-image: url(/images/velaabajo.jpg);
+}
+
+/*--------------------------------footer---------------------------------------*/
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  margin-top: 10px;
+}
+
+footer a i {
+  margin-left: 20px;
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+/*-------------------------------------responsive main----------------------------*/
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .img {
+    height: 300px;
+  }
+
+  .footermain {
+    margin-top: 103vh;
+  }
+}
+
+/*-----------------------------Tienda----------------------------------------*/
+.tienda {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+img {
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.cards {
+  border-radius: 10%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.cards:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------------------responsive tienda------------------------------*/
+@media (max-width: 1024px) {
+  .tienda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*-----------------------------Contacto----------------------------------------*/
+.form-register {
+  width: 50vw;
+  height: 56vh;
+  background: rgb(195, 144, 99);
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.controls {
+  width: 100%;
+  background: rgb(195, 144, 99);
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: black;
+  padding: 15px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+/*----------------acerca de-----------------------------*/
+.acercade h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.nosotros p {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 147, 1) 0%, rgba(149, 0, 255, 1) 100%);
+}
+
+.nosotros {
+  margin: auto;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 147, 1) 0%, rgba(149, 0, 255, 1) 100%);
+}
+
+.nosotros img {
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .nosotros p {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nosotros {
+    display: inline;
+    background: none;
+  }
+
+  .nosotros img {
+    margin-left: 30%;
+  }
+}
+/*--------------------------------proceso--------------------------*/
+.carrusel{
+  width: 98.7vw;
+  height: 50vh;
+}
