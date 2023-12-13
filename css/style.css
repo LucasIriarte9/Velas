@@ -5,97 +5,64 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ede9dd;
 }
-
-a {
-  font-style: none;
+* a {
   text-decoration: none;
-  color: black;
-  margin-left: 20px;
+  color: #000000;
 }
-
-li {
+* li {
   display: inline-block;
   font-size: 30px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
-/*--------------------------------------header-------------------------------*/
 header {
-  height: 20vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-nav {
+header nav {
   margin-right: 5px;
 }
-
-article {
+header article {
   margin-left: 40px;
 }
-
-.logo img {
-  width: 150px;
-  height: 150px;
+header .logo img {
+  width: 80px;
+  height: 80px;
   border-radius: 40px;
 }
-
-.nav li a:hover {
+header .nav li a:hover {
   color: rgb(195, 144, 99);
   font-size: 35px;
   transition: 1.5s;
 }
 
-/*----------------------------responsive nav--------------------------------*/
-@media (max-width: 1024px) {
-  .nav li a {
-    font-size: 20px;
-  }
-
-  .nav li a:hover {
-    font-size: 24px;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 50px;
-  }
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  margin-top: 10px;
+}
+footer i {
+  margin-left: 20px;
+  font-size: 40px;
+  margin-top: 15px;
+}
+footer .fa-brands {
+  color: #554114;
+  margin: 20px;
 }
 
-@media (max-width: 768px) {
-  .nav{
-    max-width: 45vh;
-  }
-  .nav li a {
-    font-size: 15px;
-    margin: 2px;
-  }
-
-  .nav li a:hover {
-    font-size: 18px;
-  }
-
-  .logo {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 80px;
-  }
-}
-
-/*------------------------------main-------------------------------------------*/
 .mainGrid {
   margin-left: 5%;
+  height: 80vh;
   width: 90vw;
-  height: 78vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  grid-template-areas: 
-  "imagen1 imagen2 imagen3"
-  "imagen4 imagen4 imagen3";
+  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen4 imagen3";
 }
 
 .imagen1 {
@@ -134,77 +101,28 @@ article {
   background-image: url(../images/velaabajo.jpg);
 }
 
-/*--------------------------------footer---------------------------------------*/
-footer {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  margin-top: 10px;
-}
-
-footer a i {
-  margin-left: 20px;
-  font-size: 40px;
-  margin-top: 15px;
-}
-
-/*-------------------------------------responsive main----------------------------*/
-@media (max-width: 1024px) {
-  .mainGrid {
-    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-
-  .img {
-    height: 300px;
-  }
-
-  .footermain {
-    margin-top: 103vh;
-  }
-}
-
-/*-----------------------------Tienda----------------------------------------*/
 .tienda {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-img {
-  max-width: 250px;
+.tienda img {
+  max-width: 200px;
   max-height: 200px;
 }
-
-.cards {
+.tienda .cards {
+  margin-left: 5px;
   border-radius: 10%;
   text-align: center;
   transition: all 0.3s;
 }
-
-.cards:hover {
+.tienda .cards:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/*-------------------------------responsive tienda------------------------------*/
-@media (max-width: 1024px) {
-  .tienda {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .tienda {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/*-----------------------------Contacto----------------------------------------*/
 .form-register {
   width: 50vw;
-  height: 56vh;
   background: rgb(195, 144, 99);
   padding: 30px;
   margin: auto;
@@ -212,8 +130,7 @@ img {
   border-radius: 15px;
   box-shadow: 7px 13px 37px #000;
 }
-
-.controls {
+.form-register .controls {
   width: 100%;
   background: rgb(195, 144, 99);
   padding: 12px;
@@ -222,7 +139,6 @@ img {
   border: 1px solid black;
   font-size: 18px;
 }
-
 .form-register .botons {
   width: 100%;
   background: black;
@@ -232,12 +148,32 @@ img {
   font-size: 16px;
 }
 
-/*----------------acerca de-----------------------------*/
+.acercade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .acercade h2 {
   text-align: center;
   font-size: 40px;
 }
 
+.nosotros {
+  margin: 20px 0;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
+}
+.nosotros img {
+  margin: auto;
+  width: 250px;
+  height: 200px;
+}
 .nosotros p {
   max-width: 500px;
   text-align: center;
@@ -246,43 +182,64 @@ img {
   border-radius: 20px;
   padding: 10px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 147, 1) 0%, rgba(149, 0, 255, 1) 100%);
-}
-
-.nosotros {
-  margin: auto;
-  width: 60vw;
-  height: 30vh;
-  display: flex;
-  text-align: center;
-  padding: 10px 5px;
-  border-radius: 20px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 147, 1) 0%, rgba(149, 0, 255, 1) 100%);
-}
-
-.nosotros img {
-  margin: auto;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
 }
 
 @media (max-width: 1024px) {
-  .nosotros p {
-    max-width: 400px;
+  main {
+    align-items: center;
+  }
+  .nav li a {
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav li a:hover {
+    font-size: 24px;
+  }
+  .mainGrid {
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: fit-content;
+  }
+  .img {
+    height: 300px;
+  }
+  .tienda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .df-nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+  }
+  .form-register {
+    width: 80vw;
   }
 }
-
 @media (max-width: 768px) {
   .nosotros {
     display: inline;
     background: none;
   }
-
-  .nosotros img {
-    margin-left: 30%;
+  .nav {
+    max-width: 45vh;
+  }
+  .nav li a {
+    font-size: 15px;
+    margin: 2px;
+  }
+  .nav li a:hover {
+    font-size: 18px;
+  }
+  .tienda {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-/*--------------------------------proceso--------------------------*/
-.carrusel{
-  width: 98.7vw;
-  height: 50vh;
-}
+
+/*# sourceMappingURL=style.css.map */

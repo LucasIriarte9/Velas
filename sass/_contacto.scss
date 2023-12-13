@@ -1,0 +1,28 @@
+.form-register {
+    width: 50vw;
+    background: rgb(195, 144, 99);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 7px 13px 37px #000;
+
+    .controls {
+        width: 100%;
+        background: rgb(195, 144, 99);
+        padding: 12px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid black;
+        font-size: 18px;
+    }
+
+    .botons {
+        width: 100%;
+        background: black;
+        padding: 15px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ede9dd;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+}

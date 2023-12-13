@@ -1,0 +1,70 @@
+
+@media (max-width: 1024px) {
+    main {
+        align-items: center;
+    }
+
+    .nav li a {
+        font-size: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li a:hover {
+        font-size: 24px;
+    }
+
+    .mainGrid {
+        grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: fit-content;
+    }
+
+    .img {
+        height: 300px;
+    }
+
+    .tienda {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .df-nav {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .form-register {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .nosotros {
+        display: inline;
+        background: none;
+    }
+
+    .nav {
+        max-width: 45vh;
+    }
+
+    .nav li a {
+        font-size: 15px;
+        margin: 2px;
+    }
+
+    .nav li a:hover {
+        font-size: 18px;
+    }
+
+    .tienda {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
