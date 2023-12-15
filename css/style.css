@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ede9dd;
+  background-color: #ffffff;
 }
 * a {
   text-decoration: none;
@@ -13,29 +13,6 @@
   display: inline-block;
   font-size: 30px;
   margin-right: 20px;
-}
-
-header {
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header nav {
-  margin-right: 5px;
-}
-header article {
-  margin-left: 40px;
-}
-header .logo img {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-}
-header .nav li a:hover {
-  color: rgb(195, 144, 99);
-  font-size: 35px;
-  transition: 1.5s;
 }
 
 footer {
@@ -90,7 +67,7 @@ footer .fa-brands {
 }
 
 .imagen2 {
-  background-image: url(../images/perfuminas.jpg);
+  background-image: url(../images/perfuminas.WEBP);
 }
 
 .imagen3 {
@@ -98,7 +75,7 @@ footer .fa-brands {
 }
 
 .imagen4 {
-  background-image: url(../images/velaabajo.jpg);
+  background-image: url(../images/velaabajo.WEBP);
 }
 
 .tienda {
@@ -112,7 +89,7 @@ footer .fa-brands {
   max-height: 200px;
 }
 .tienda .cards {
-  margin-left: 5px;
+  margin-left: 50px;
   border-radius: 10%;
   text-align: center;
   transition: all 0.3s;
