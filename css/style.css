@@ -15,6 +15,11 @@
   margin-right: 20px;
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -145,6 +150,7 @@ footer .fa-brands {
   border-radius: 20px;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
+  padding: 5px;
 }
 .nosotros img {
   margin: auto;
@@ -160,6 +166,15 @@ footer .fa-brands {
   padding: 10px;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
+}
+
+.indexh1 {
+  text-align: center;
+}
+
+.indexh2 {
+  margin-top: 15px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -203,6 +218,9 @@ footer .fa-brands {
   .nosotros {
     display: inline;
     background: none;
+  }
+  .nosotros img {
+    margin-bottom: 5px;
   }
   .nav {
     max-width: 45vh;
