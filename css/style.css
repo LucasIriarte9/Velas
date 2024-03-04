@@ -43,7 +43,7 @@ footer .fa-brands {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
   grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen4 imagen3";
 }
 
@@ -68,30 +68,30 @@ footer .fa-brands {
 }
 
 .imagen1 {
-  background-image: url(../images/vela.JPG);
+  background-image: url(../images/difusor.jpg);
 }
 
 .imagen2 {
-  background-image: url(../images/perfuminas.WEBP);
+  background-image: url(../images/vaso.jpg);
 }
 
 .imagen3 {
-  background-image: url(../images/difusor.JPG);
+  background-image: url(../images/larga.jpg);
 }
 
 .imagen4 {
-  background-image: url(../images/velaabajo.WEBP);
+  background-image: url(../images/pano.jpg);
 }
 
 .tienda {
-  margin-top: 30px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 8px;
 }
 .tienda img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 280px;
+  max-height: 280px;
 }
 .tienda .cards {
   margin-left: 50px;
@@ -128,53 +128,6 @@ footer .fa-brands {
   color: white;
   margin: 16px 0;
   font-size: 16px;
-}
-
-.acercade {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.acercade h2 {
-  text-align: center;
-  font-size: 40px;
-}
-
-.nosotros {
-  margin: 20px 0;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  text-align: center;
-  padding: 10px 5px;
-  border-radius: 20px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
-  padding: 5px;
-}
-.nosotros img {
-  margin: auto;
-  width: 250px;
-  height: 200px;
-}
-.nosotros p {
-  max-width: 500px;
-  text-align: center;
-  margin: auto;
-  color: white;
-  border-radius: 20px;
-  padding: 10px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 147) 0%, rgb(149, 0, 255) 100%);
-}
-
-.indexh1 {
-  text-align: center;
-}
-
-.indexh2 {
-  margin-top: 15px;
-  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -215,13 +168,6 @@ footer .fa-brands {
   }
 }
 @media (max-width: 768px) {
-  .nosotros {
-    display: inline;
-    background: none;
-  }
-  .nosotros img {
-    margin-bottom: 5px;
-  }
   .nav {
     max-width: 45vh;
   }

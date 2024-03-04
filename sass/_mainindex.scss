@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
     grid-template-areas:
         "imagen1 imagen2 imagen3"
         "imagen4 imagen4 imagen3";
@@ -32,17 +32,17 @@
 }
 
 .imagen1 {
-    background-image: url(../images/vela.JPG);
+    background-image: url(../images/difusor.jpg);
 }
 
 .imagen2 {
-    background-image: url(../images/perfuminas.WEBP);
+    background-image: url(../images/vaso.jpg);
 }
 
 .imagen3 {
-    background-image: url(../images/difusor.JPG);
+    background-image: url(../images/larga.jpg);
 }
 
 .imagen4 {
-    background-image: url(../images/velaabajo.WEBP);
+    background-image: url(../images/pano.jpg);
 }
