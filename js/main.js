@@ -95,7 +95,7 @@ const showHtml = () => {
     parseInt(localStorage.setItem("totalOfProduct",totalOfProduct));
     let countLs = localStorage.getItem("totalOfProduct");
 }
-    
+showHtml();
 //-----------------------------------------------------------------------------
 
 
