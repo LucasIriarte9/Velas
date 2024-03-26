@@ -1,0 +1,40 @@
+{
+    "productos": [
+      {
+        "id": 7,
+        "nombre": "Set completo",
+        "precio": 3000,
+        "img": "../images/setCompleto.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "Set Intermedio",
+        "precio": 2500,
+        "img": "../images/setIntermedio.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "Set basico",
+        "precio": 2000,
+        "img": "../images/setBasico.jpg"
+      },
+      {
+        "id": 10,
+        "nombre": "Difusor Grande",
+        "precio": 2500,
+        "img": "../images/difusorGrande.jpg"
+      },
+      {
+        "id": 11,
+        "nombre": "Jarron",
+        "precio": 2800,
+        "img": "../images/jarron.jpg"
+      },
+      {
+        "id": 12,
+        "nombre": "Set Primaveral",
+        "precio": 2300,
+        "img": "../images/setPrimavera.jpg"
+      }
+    ]
+  }

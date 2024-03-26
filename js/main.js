@@ -4,7 +4,8 @@ btnCart = document.querySelector(".container-cart-icon"),
     cartInfo = document.querySelector(".cart-product"),
     rowProduct = document.querySelector(".row-product"),
     valortotal = document.querySelector(".total-pagar"),
-    countProduct = document.querySelector("#contador-productos");
+    countProduct = document.querySelector("#contador-productos"),
+    comprarBtn = document.querySelector("#comprar");
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 //mostrar el carrito
 btnCart.addEventListener("click", () => {
@@ -91,11 +92,55 @@ const showHtml = () => {
     //muestra el total de los productos del carrito
     valortotal.innerHTML = `$${total}`;
     //muestra la cantidad de productos en el carrito
-    countProduct.innerHTML= totalOfProduct;
-    parseInt(localStorage.setItem("totalOfProduct",totalOfProduct));
+    countProduct.innerHTML = totalOfProduct;
+    parseInt(localStorage.setItem("totalOfProduct", totalOfProduct));
     let countLs = localStorage.getItem("totalOfProduct");
 }
 showHtml();
+comprarBtn.addEventListener("click", () => {
+
+    if (carrito.length == 0) {
+        Swal.fire("No hay nada en tu carrito!")
+    } else {
+        window.location.href = "../pages/envio.html"
+        carrito = [];
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+    }
+});
+const eventoFuturo = (response) => {
+    return new Promise((resolve, reject) => {
+        if (response) {
+            resolve("Promesa Resuelta");
+        } else {
+            reject("Promesa Rechazada");
+        }
+    });
+};
+
+function renderServicios(array) {
+    let agregar;
+    for (const item of array) {
+        const { nombre, img, precio } = item;
+        agregar = `
+        <article class="cards">
+        <img src="${img}" alt="${nombre}">
+        <h2>${nombre}</h2>
+        <p class="price">$${precio}</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </article>
+        `
+        tienda.innerHTML+=agregar;
+    }
+}
+
+const getData= async (url)=>{
+    const respuesta= await fetch(url);
+    const products= await respuesta.json();
+    const { productos } = products;
+    renderServicios(productos);
+}
+const  API_URL="../db/db.json";
+getData(API_URL);
 //-----------------------------------------------------------------------------
 
 
@@ -113,3 +158,8 @@ showHtml();
 // //Agrego un objeto nuevo a mi array de objetos con el push
 // const nuevoProducto = new Producto("vaso grande", 1200, "../images/vasoGrande.png");
 // productos.push(nuevoProducto);
+
+// fetch("/db/db.json").then(res => res.json()).then(product => {
+//     const { productos } = product;
+//     renderServicios(productos);
+// })

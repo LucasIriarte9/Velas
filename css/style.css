@@ -25,6 +25,10 @@
   height: 40px;
 }
 
+#login {
+  border: solid 2px #000000;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -221,6 +225,20 @@ img {
   font-weight: 900;
 }
 
+.compra {
+  justify-content: center;
+  display: flex;
+}
+
+#comprar {
+  border-radius: 10px;
+  font-size: x-large;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin: 5px;
+  padding: 3px;
+}
+
 .hidden-cart {
   display: none;
 }
@@ -240,6 +258,14 @@ img {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#h1Envio {
+  text-align: center;
+}
+
+.form_contact {
+  margin: auto;
 }
 
 /* Informacion de Contacto*/
