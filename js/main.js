@@ -45,6 +45,21 @@ tienda.addEventListener("click", e => {
         //funcion para guardar el carrito en local storage
         localStorage.setItem("carrito", JSON.stringify(carrito));
         showHtml();
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Producto añadido al carrito"
+          });
     };
 });
 //funcion para borrar productos del carrito
@@ -57,6 +72,21 @@ rowProduct.addEventListener("click", (e) => {
         //funcion para guardar el carrito en local storage
         localStorage.setItem("carrito", JSON.stringify(carrito));
         showHtml();
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+          });
+          Toast.fire({
+            icon: "error",
+            title: "Producto eliminado del carrito"
+          });
     }
 });
 //Funcion para mostrar html del carrito
@@ -100,7 +130,7 @@ showHtml();
 comprarBtn.addEventListener("click", () => {
 
     if (carrito.length == 0) {
-        Swal.fire("No hay nada en tu carrito!")
+        Swal.fire("No hay nada en tu carrito!");
     } else {
         window.location.href = "../pages/envio.html"
         carrito = [];

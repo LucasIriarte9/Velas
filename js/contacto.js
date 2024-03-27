@@ -31,10 +31,16 @@ function guardarEnStorage(storage) {
             localStorage.setItem("user", JSON.stringify(user));
             message.style.color="green";
             message.innerHTML="Datos guardados y enviados correctamente";
+            setTimeout(()=>{
+                window.location.href = "../index.html";
+            },1500);
         } else if (storage == "sessionStorage") {
             sessionStorage.setItem("user", JSON.stringify(user));
             message.style.color="green";
             message.innerHTML="Datos enviados correctamente";
+            setTimeout(()=>{
+                window.location.href = "../index.html";
+            },1500);
         }
     }
 }

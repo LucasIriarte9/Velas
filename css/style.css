@@ -420,7 +420,7 @@ form.form_contact input[type=button]:hover {
     height: fit-content;
   }
   .img {
-    height: 300px;
+    height: 500px;
   }
   .tienda {
     grid-template-columns: repeat(2, 1fr);
@@ -448,6 +448,17 @@ form.form_contact input[type=button]:hover {
   }
   .tienda {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .form_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cantact_info {
+    width: auto;
+  }
+  .img {
+    height: 150px;
   }
 }
 
